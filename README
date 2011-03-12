@@ -1,0 +1,9 @@
+
+Query Classes
+===========
+
+This project is a small set of code that demonstrates the use of query classes with an ORM, in this case NHibernate. 
+
+When using Query Classes each query in the application is represented by a class, called a specification. The specification defines the query, the sort order and any required eager loading.
+
+The main design goal of Query Classes is to encapsulate query logic and to prevent query logic from spreading around an application. In this way it is a similar strategy to the Repository Pattern as originally specified in DDD, except I think that Query Classes are more lightweight.
