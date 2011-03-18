@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NHibernate;
-<<<<<<< HEAD
 using NHibernate.Linq;
 using NSubstitute;
-=======
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
 using NUnit.Framework;
 
 namespace QueryObjects
@@ -19,7 +16,6 @@ namespace QueryObjects
         public void QueryBySpecification()
         {
             var canDriveSpecification = new PeopleOverAgeSpecification(16);
-<<<<<<< HEAD
             var allPeopleOfDrivingAge = session.Spec().Query(canDriveSpecification);
         }
 
@@ -32,9 +28,6 @@ namespace QueryObjects
             SpecificationExtensions.SpecificationQueryerFactory = s => queryer;
             var allPeopleOfDrivingAge = session.Spec().Query(canDriveSpecification);
             Assert.AreEqual(1, allPeopleOfDrivingAge.Count());
-=======
-            var allPeopleOfDrivingAge = session.QueryBySpecification(canDriveSpecification);
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
         }
 
         private ISessionFactory sessionFactory;
@@ -43,27 +36,18 @@ namespace QueryObjects
         [TestFixtureSetUp]
         public void BeforeAll()
         {
-<<<<<<< HEAD
             //sessionFactory = new SessionFactoryFactory().Build();
-=======
-            sessionFactory = new SessionFactoryFactory().Build();
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
         }
 
         [SetUp]
         public void BeforeTest()
         {
-<<<<<<< HEAD
             //session = sessionFactory.OpenSession();
-=======
-            session = sessionFactory.OpenSession();
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
         }
 
         [TearDown]
         public void AfterTest()
         {
-<<<<<<< HEAD
             //session.Dispose();
         }
     }
@@ -108,9 +92,6 @@ namespace QueryObjects
                         specification.Reduce(session.Query<T>())
                     )
                 );
-=======
-            session.Dispose();
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
         }
     }
 }

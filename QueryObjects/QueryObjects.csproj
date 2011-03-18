@@ -52,12 +52,9 @@
     <Reference Include="NHibernate.Linq">
       <HintPath>..\packages\NHibernate.Linq.1.0\lib\NHibernate.Linq.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="NSubstitute">
       <HintPath>..\packages\NSubstitute.1.0.0.0\lib\35\NSubstitute.dll</HintPath>
     </Reference>
-=======
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.5.9.10348\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -82,10 +79,6 @@
     <Compile Include="Example.cs" />
     <Compile Include="PeopleOverAgeSpecification.cs" />
     <Compile Include="Person.cs" />
-<<<<<<< HEAD
-=======
-    <Compile Include="SessionExtensions.cs" />
->>>>>>> e4a42e1395bb76d3e03949d5a5f364d5da171559
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionFactoryFactory.cs" />
     <Compile Include="Specification.cs" />
